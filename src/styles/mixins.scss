@@ -1,0 +1,21 @@
+// Sass Mixins
+
+// 文字截断
+@mixin text-line-clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+// 背景图
+@mixin background-img($url) {
+  background: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+

@@ -1,0 +1,40 @@
+// Sass Mixins
+
+// 居中
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// box阴影样式
+%box-shadow {
+  border-radius: 6px;
+  box-shadow: 2px 3px 22px 0 rgba(232, 232, 232, 0.7);
+}
+
+// 文字超出省略
+%text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 清除浮动
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

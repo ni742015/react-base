@@ -1,0 +1,75 @@
+// Sass Variables
+
+// base variables
+$white: #fff;
+$purple-l:#ae7398;
+$purple: #6e006e;
+$red: #c30078;
+$red-d: #fb0000;
+$pink: rgba(195,0,120,.1);
+$blue: #004196;
+$blue-l: #0096ff;
+$yellow: #ffc800;
+$gray-light-llll:rgba(179,195,213, .1);
+$gray-light-lllll:#f2f2f2;
+$gray-light-lll:#fafafa;
+$gray-light-ll:#e4e9ef;
+$gray-light-l:#b3c3d5;
+$gray-lighter:#c4c4c4;
+$gray-light: #C1C1C1;
+$gray: #7c7c7c;
+$gray2: #9296a7;
+$gray-dark: #505255;
+$gray-border: #ececec;
+
+// 线条颜色
+$gray-line: #e8e8e8;
+$line-color: #d8d8d8;
+
+
+// 主题色
+$theme-color1: $purple;
+$theme-color2: $red;
+$theme-color3: $blue;
+
+
+// 背景
+$bg-color: $white;
+$bg-color-d: $pink;
+$bg-color-gray: $gray-light-lll;
+$bg-color-yellow: $yellow;
+$bg-color-blue-l: $blue-l;
+$bg-color-theme1: $purple;
+
+//字体颜色
+$font-color-white: $white;
+$font-color-gray: $gray;
+$font-color-gray-light: $gray-light;
+$font-color-gray-dark: $gray-dark;
+
+$font-color-theme1: $theme-color1;
+$font-color-theme2: $theme-color2;
+$font-color-theme3: $theme-color3;
+
+// 字体大小
+$font-size-sssss: 9px;
+$font-size-ssss: 10px;
+$font-size-sss: 11px;
+$font-size-ss: 12px;
+$font-size-s: 13px;
+$font-size-small: 14px;
+$font-size-common: 16px;
+$font-size-cc: 18px;
+$font-size-primary: 20px;
+$font-size-pp: 22px;
+$font-size-medium: 24px;
+$font-size-large: 30px;
+$font-size-ll: 36px;
+$font-size-lll: 44px;
+
+// line
+$line-theme-color1: 1px solid $theme-color1;
+$line-theme-color3: 1px solid $theme-color3;
+$line-gray: 1px solid $gray-border;
+
+
