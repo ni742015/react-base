@@ -1,7 +1,8 @@
 {
   "name": "react-app",
   "version": "0.1.0",
-  "private": true,
+	"private": true,
+	"envPublicUrl": "./",
   "dependencies": {
     "@babel/core": "7.2.2",
     "@babel/plugin-transform-react-jsx-source": "^7.2.0",
@@ -59,7 +60,7 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.2",
-    "tslint": "^5.15.0",
+    "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.0.0",
     "typescript": "3.4.2",
@@ -72,19 +73,17 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "lint-staged:js": "eslint --ext .js src",
+    "lint-staged:ts": "tslint --project ./tsconfig.json",
+    "lint-fix": "tslint --fix ./tsconfig.json"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --single-quote --write",
+    "src/**/*.{js,jsx}": "npm run lint-staged:js",
+    "src/**/*.{ts,tsx}": [
+      "npm run lint-staged:ts",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "eslintConfig": {
     "extends": "react-app"
